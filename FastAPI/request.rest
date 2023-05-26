@@ -1,0 +1,34 @@
+@api = http://127.0.0.1:8000 
+### Cmd + alt + r para correr get o post
+GET {{api}}/user/?id=1
+###
+GET {{api}}/users/1
+###
+GET {{api}}/user/
+
+###
+POST {{api}}/user/
+Content-Type: application/json
+
+{
+    "id": 33,
+    "name": "pepo",
+    "email": "email",
+    "password": "password"
+}
+
+###
+DELETE {{api}}/users/4/
+###
+PUT {{api}}/user/
+Content-Type: application/json
+
+{
+    "id": 31,
+    "name": "pipe22",
+    "email": "email",
+    "password": "password"
+}
+
+###
+DELETE {{api}}/user/4/
